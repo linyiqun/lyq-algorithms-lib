@@ -11,5 +11,8 @@ public class Client {
 		String graphFilePath = "C:\\Users\\lyq\\Desktop\\icon\\graphData.txt";
 		
 		TarjanTool tool = new TarjanTool(graphFilePath);
+		//下面这个方法为改造的一点方法，还有点问题
+		//tool.searchStrongConnectedGraph();
+		tool.standardSearchSCG();
 	}
 }

@@ -168,8 +168,8 @@ public class Graph {
 			t = 1.0 * pointNum2 / connectedEdgeNum;
 		}
 
-		// 计算分裂阈值,括号内为总点数/总边数，就是平均每边所承受的点数量
-		landa = 0.5 * Math.exp((1.0 * (pointNum1 + pointNum2) / totalEdgeNum));
+		// 计算分裂阈值,括号内为总边数/总点数，就是平均每边所承受的点数量
+		landa = 0.5 * Math.exp((1.0 * totalEdgeNum / (pointNum1 + pointNum2)));
 
 		// 如果承受系数不小于分裂阈值，则代表需要分裂
 		if (t >= landa) {
